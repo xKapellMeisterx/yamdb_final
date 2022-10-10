@@ -66,10 +66,10 @@ def title_genre():
 def run():
     # set this value to True, in case you need
     # to clean db before injecting data:
-    ERASE_ALL = True
+    erase_all = True
 
     for key in DIC:
-        if ERASE_ALL:
+        if erase_all:
             key.objects.all().delete()
             print(
                 f'All existing records for table {key.__name__} were erased.'
