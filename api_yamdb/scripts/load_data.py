@@ -1,9 +1,8 @@
 import csv
 import io
 
-from reviews.models import Category, Comment, Genre, Review, Title, User
 from django.db.utils import IntegrityError
-
+from reviews.models import Category, Comment, Genre, Review, Title, User
 
 DIC = {
     User: 'static/data/users.csv',

@@ -4,16 +4,8 @@ from django.contrib.auth.hashers import check_password
 from django.db.models import Avg, Q
 from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
-from reviews.models import (
-    MAX_LENGTH_LONG,
-    MAX_LENGTH_MED,
-    Category,
-    Comment,
-    Genre,
-    Review,
-    Title,
-    User,
-)
+from reviews.models import (MAX_LENGTH_LONG, MAX_LENGTH_MED, Category, Comment,
+                            Genre, Review, Title, User)
 
 from .validators import NotFoundValidationError, username_restriction
 
