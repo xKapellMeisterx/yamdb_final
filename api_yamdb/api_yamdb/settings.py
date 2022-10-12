@@ -137,4 +137,4 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=20),
 }
 
-ACCESS_CODE_LEN = 20
+

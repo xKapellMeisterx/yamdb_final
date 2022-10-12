@@ -1,7 +1,6 @@
 import secrets
 import string
 
-from api_yamdb.settings import ACCESS_CODE_LEN
 from django.contrib.auth.hashers import make_password
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
@@ -67,7 +66,7 @@ class EmailRegistrationView(APIView):
 
         access_code = ''.join(
             secrets.choice(string.ascii_letters + string.digits)
-            for _ in range(ACCESS_CODE_LEN)
+            for _ in range(20)
         )
 
         if serializer.is_valid():
