@@ -55,7 +55,9 @@ jobs:
         # Пуш образа в Docker Hub
         uses: docker/build-push-action@v2
         with:
+          no-cache: true
           push: true
+          context: ./api_yamdb/
           tags: xkapellmeisterx/infra_actions:latest
 
   deploy:
