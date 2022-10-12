@@ -3,7 +3,6 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from django.utils.text import Truncator
 
-
 MAX_LENGTH_SHORT = 50
 MAX_LENGTH_MED = 150
 MAX_LENGTH_LONG = 254

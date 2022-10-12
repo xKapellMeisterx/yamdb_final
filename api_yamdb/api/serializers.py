@@ -228,3 +228,4 @@ class TitleReadSerializer(serializers.ModelSerializer):
                 if isinstance(rating, int)
                 else float(f'{rating:.2f}')
             )
+        return None
