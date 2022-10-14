@@ -2,6 +2,9 @@
 yamdb_final
 ![example workflow](https://github.com/xKapellMeisterx/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
+Ссылка на статику:
+http://178.154.202.139/static/redoc.yaml
+
 ## Описание:
 
 Проект YaMDb собирает отзывы (Review) пользователей на произведения (Titles).
